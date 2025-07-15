@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .logo {
@@ -102,4 +102,49 @@ section {
     color: #555555;
     font-size: 20px;
     font-weight: 700;
+}
+
+@media (max-width: 481px) {
+    main {
+        width: 90%;
+        padding: 20px;
+        margin: auto 20px;
+    }
+
+    .currency-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .currency-box img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    .arrow-img {
+        width: 40px;
+        height: 40px;
+        margin: 12px 0;
+    }
+
+    label,
+    select,
+    input,
+    button {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .convert-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
 }
